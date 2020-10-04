@@ -8,9 +8,9 @@ namespace Squasher.Models
 {
     public class ProjectModel
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Title { get; set; }
-        public List<BugModel> Bugs { get; set; }
-        public List<SquasherModel> Squashers { get; set; }
+        public ICollection<BugModel> Bugs { get; set; }
+        public ICollection<ProjectSquasherModel> ProjectSquashers { get; set; }
     }
 }
